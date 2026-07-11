@@ -1,25 +1,608 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Samuel</title>
-	</head>
-	<body>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Nelson — QA Engineer Portfolio</title>
+  <meta name="description" content="Samuel Nelson is a Middle Quality Assurance Engineer at Synapsis, specializing in manual testing, test automation, API testing, and performance testing." />
+  <meta name="author" content="Samuel Nelson" />
+  <meta name="keywords" content="QA Engineer, Quality Assurance, Test Automation, Selenium, Playwright, Postman, JMeter, Samuel Nelson" />
 
-		<img src="pas foto 2x3.png" alt="pas foto">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Samuel Nelson — QA Engineer Portfolio" />
+  <meta property="og:description" content="Quality Assurance Engineer specializing in test automation and software quality." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="pas foto 2x3.png" />
 
-		<h1>Samuel</h1>
-		<h2>Selamat Datang</h2>
-		<p>Saya adalah mahasiswa Ilmu Komputer dari UPI. Saat ini saya sedang belajar membuat website dengan HTML.</p>
-		<h2>Alasan Saya Ingin Belajar Membuat Website:</h2>
-		<ol>
-			<li>Membuat website merupakan skill dasar komputer</li>
-			<li>Belajar  membuat website tidak sulit dengan HTML</li>
-			<li> Membuat Website dengan HTML tidak butuh sumber daya yang besar</li>
-		</ol>
-		<p>Jika ingin menghubungi , bisa cek profil LinkedIn saya. <a href="https://www.linkedin.com/in/samuel-nelson-2a0b65245/">Samuel Nelson</a></p>
-		
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-	</body>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION
+  ============================= -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo" aria-label="Samuel Nelson — back to top">SN</a>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#about"         class="nav__link">About</a></li>
+        <li><a href="#experience"    class="nav__link">Experience</a></li>
+        <li><a href="#skills"        class="nav__link">Skills</a></li>
+        <li><a href="#projects"      class="nav__link">Projects</a></li>
+        <li><a href="#education"     class="nav__link">Education</a></li>
+        <li><a href="#organizations" class="nav__link">Organizations</a></li>
+        <li><a href="#contact"       class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        </button>
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ============================
+         HERO
+    ============================= -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+      <div class="hero__container">
+        <div class="hero__photo-wrap">
+          <img
+            src="pas foto 2x3.png"
+            alt="Samuel Nelson, Quality Assurance Engineer"
+            class="hero__photo"
+            width="180"
+            height="180"
+          />
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Samuel Nelson</h1>
+          <p class="hero__title">Middle Quality Assurance Engineer</p>
+          <p class="hero__tagline">
+            Building reliable software through rigorous testing — from manual to automation, API to performance.
+          </p>
+
+          <div class="hero__links" role="list" aria-label="Contact and profile links">
+            <a href="mailto:samuelnelson_1901584@upi.edu" class="btn btn--primary" aria-label="Send email to Samuel Nelson" role="listitem">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/samuel-nelson-2a0b65245/" target="_blank" rel="noopener noreferrer" class="btn btn--outline" aria-label="Samuel Nelson on LinkedIn" role="listitem">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/samuelnelson1584" target="_blank" rel="noopener noreferrer" class="btn btn--outline" aria-label="Samuel Nelson on GitHub" role="listitem">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="https://drive.google.com/drive/folders/1ouZ_5nXzb30MBM3pxQ0uihZv5LEcaPMD" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" aria-label="View Samuel Nelson's certificates on Google Drive" role="listitem">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Certificates
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ============================
+         ABOUT
+    ============================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section__container">
+        <div class="section__header fade-in">
+          <span class="section__label">Who I Am</span>
+          <h2 class="section__title" id="about-heading">About Me</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text fade-in">
+            <p>
+              I'm a <strong>Computer Science graduate</strong> from Universitas Pendidikan Indonesia (GPA <strong>3.78/4.00</strong>) with a deep passion for software quality and reliability. I sharpened my QA skills through an Independent Study certification at <strong>Alterra Academy</strong>, achieving a top score of 90/100.
+            </p>
+            <p>
+              Since then, I've been growing my career at <strong>PT. Synapsis Sinergi Digital</strong> — starting as an intern and progressing through Junior to my current <strong>Middle QA Engineer</strong> role. I thrive in Agile/Scrum environments and am experienced in the full spectrum of QA: manual, automated, API, and performance testing.
+            </p>
+            <p>
+              Beyond my day job, I'm active in community leadership, currently serving as <strong>Library Chief</strong> at GKI Harapan Indah, where I manage cross-functional teams and strategic planning.
+            </p>
+          </div>
+
+          <div class="about__stats" aria-label="Key stats">
+            <div class="stat-card fade-in">
+              <span class="stat-card__number">3+</span>
+              <span class="stat-card__label">Years in QA</span>
+            </div>
+            <div class="stat-card fade-in">
+              <span class="stat-card__number">3.78</span>
+              <span class="stat-card__label">University GPA</span>
+            </div>
+            <div class="stat-card fade-in">
+              <span class="stat-card__number">90<small>/100</small></span>
+              <span class="stat-card__label">Certification Score</span>
+            </div>
+            <div class="stat-card fade-in">
+              <span class="stat-card__number">3</span>
+              <span class="stat-card__label">Company Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         EXPERIENCE
+    ============================= -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-heading">
+      <div class="section__container">
+        <div class="section__header fade-in">
+          <span class="section__label">Career Path</span>
+          <h2 class="section__title" id="experience-heading">Work Experience</h2>
+        </div>
+
+        <div class="timeline" role="list" aria-label="Work experience timeline">
+
+          <article class="timeline__item fade-in" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Middle Quality Assurance</h3>
+                  <p class="timeline__company">PT. Synapsis Sinergi Digital &mdash; Jakarta, Indonesia</p>
+                </div>
+                <time class="timeline__date" datetime="2026-05">May 2026 &ndash; Present</time>
+              </div>
+              <ul class="timeline__list" role="list">
+                <li>Perform manual and automated testing to identify bugs, defects, and performance issues.</li>
+                <li>Develop and maintain test cases, test scripts, and test data sets to ensure product quality.</li>
+                <li>Conduct functional, unit, integration, smoke, and regression testing to ensure system stability.</li>
+                <li>Participate in scrum meetings, sprint planning, and provide QA insights during development cycles.</li>
+                <li>Continuously evaluate and improve testing processes and tools to enhance efficiency and accuracy.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item fade-in" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Junior Quality Assurance</h3>
+                  <p class="timeline__company">PT. Synapsis Sinergi Digital &mdash; Jakarta, Indonesia</p>
+                </div>
+                <time class="timeline__date" datetime="2023-12">Dec 2023 &ndash; Apr 2026</time>
+              </div>
+              <ul class="timeline__list" role="list">
+                <li>Collaborated with engineers and project managers to understand project requirements and user stories.</li>
+                <li>Performed manual and automated testing to identify bugs, defects, and performance issues.</li>
+                <li>Developed and maintained test cases, test scripts, and test data sets for software products.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item fade-in" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Quality Assurance Intern</h3>
+                  <p class="timeline__company">PT. Synapsis Sinergi Digital &mdash; Jakarta, Indonesia</p>
+                </div>
+                <time class="timeline__date" datetime="2023-03">Mar 2023 &ndash; Jun 2023</time>
+              </div>
+              <ul class="timeline__list" role="list">
+                <li>Estimated, prioritized, planned, and coordinated testing activities.</li>
+                <li>Designed, developed, and executed automation scripts using open source tools.</li>
+                <li>Identified, recorded, documented, and tracked bugs thoroughly.</li>
+                <li>Developed and applied testing processes for new and existing products to meet client needs.</li>
+                <li>Worked in an Agile/Scrum development process.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SKILLS
+    ============================= -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="section__container">
+        <div class="section__header fade-in">
+          <span class="section__label">What I Know</span>
+          <h2 class="section__title" id="skills-heading">Skills &amp; Tools</h2>
+        </div>
+
+        <div class="skills__grid">
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              Test Management
+            </h3>
+            <div class="skill-group__tags" role="list" aria-label="Test management tools">
+              <span class="tag" role="listitem">TestRail</span>
+              <span class="tag" role="listitem">JIRA</span>
+              <span class="tag" role="listitem">Trello</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              API Testing
+            </h3>
+            <div class="skill-group__tags" role="list" aria-label="API testing tools">
+              <span class="tag" role="listitem">RESTful APIs</span>
+              <span class="tag" role="listitem">Postman</span>
+              <span class="tag" role="listitem">Playwright</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Automation Testing
+            </h3>
+            <div class="skill-group__tags" role="list" aria-label="Automation testing tools">
+              <span class="tag" role="listitem">Selenium</span>
+              <span class="tag" role="listitem">Playwright</span>
+              <span class="tag" role="listitem">Katalon Studio</span>
+              <span class="tag" role="listitem">Serenity</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Performance Testing
+            </h3>
+            <div class="skill-group__tags" role="list" aria-label="Performance testing tools">
+              <span class="tag" role="listitem">JMeter</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Testing Types
+            </h3>
+            <div class="skill-group__tags" role="list" aria-label="Testing methodologies">
+              <span class="tag" role="listitem">Functional</span>
+              <span class="tag" role="listitem">Unit Testing</span>
+              <span class="tag" role="listitem">Integration</span>
+              <span class="tag" role="listitem">Regression</span>
+              <span class="tag" role="listitem">Smoke Testing</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Soft Skills
+            </h3>
+            <div class="skill-group__tags" role="list" aria-label="Soft skills">
+              <span class="tag tag--soft" role="listitem">Diplomatic Communication</span>
+              <span class="tag tag--soft" role="listitem">Risk-Based Thinking</span>
+              <span class="tag tag--soft" role="listitem">Root-Cause Analysis</span>
+              <span class="tag tag--soft" role="listitem">Agile / Scrum</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         PROJECTS
+    ============================= -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-heading">
+      <div class="section__container">
+        <div class="section__header fade-in">
+          <span class="section__label">My Work</span>
+          <h2 class="section__title" id="projects-heading">Projects</h2>
+        </div>
+
+        <div class="projects__grid">
+
+          <article class="project-card project-card--placeholder fade-in">
+            <div class="project-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3 class="project-card__title">Automation Test Suite</h3>
+            <p class="project-card__desc">[ADD DETAILS] — Describe your automation test project here: tools used, scope, and key outcomes.</p>
+            <div class="project-card__tags" aria-label="Technologies used">
+              <span class="tag tag--sm">Selenium</span>
+              <span class="tag tag--sm">Playwright</span>
+              <span class="tag tag--sm">Serenity</span>
+            </div>
+            <a href="#" class="btn btn--ghost btn--sm" aria-label="View automation test suite repository">[ADD LINK]</a>
+          </article>
+
+          <article class="project-card project-card--placeholder fade-in">
+            <div class="project-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="project-card__title">API Test Collection</h3>
+            <p class="project-card__desc">[ADD DETAILS] — Describe your Postman/API testing project: endpoints covered, test strategy, and documentation.</p>
+            <div class="project-card__tags" aria-label="Technologies used">
+              <span class="tag tag--sm">Postman</span>
+              <span class="tag tag--sm">REST API</span>
+            </div>
+            <a href="#" class="btn btn--ghost btn--sm" aria-label="View API test collection repository">[ADD LINK]</a>
+          </article>
+
+          <article class="project-card project-card--placeholder fade-in">
+            <div class="project-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="project-card__title">Performance Benchmark Report</h3>
+            <p class="project-card__desc">[ADD DETAILS] — Describe your JMeter load testing project: scenarios designed, metrics collected, and findings.</p>
+            <div class="project-card__tags" aria-label="Technologies used">
+              <span class="tag tag--sm">JMeter</span>
+              <span class="tag tag--sm">Performance</span>
+            </div>
+            <a href="#" class="btn btn--ghost btn--sm" aria-label="View performance benchmark report">[ADD LINK]</a>
+          </article>
+
+        </div>
+
+        <p class="projects__note fade-in" role="note">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          These are placeholder cards. Replace [ADD DETAILS] and [ADD LINK] with your real projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================
+         EDUCATION
+    ============================= -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="section__container">
+        <div class="section__header fade-in">
+          <span class="section__label">Academic Background</span>
+          <h2 class="section__title" id="education-heading">Education</h2>
+        </div>
+
+        <div class="edu-grid">
+
+          <div class="edu-card fade-in">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="edu-card__content">
+              <h3 class="edu-card__degree">Bachelor of Computer Science</h3>
+              <p class="edu-card__institution">Universitas Pendidikan Indonesia</p>
+              <p class="edu-card__meta">Bandung, Indonesia &middot; <time datetime="2019-08">Aug 2019</time> &ndash; <time datetime="2023-01">Jan 2023</time></p>
+              <span class="edu-card__badge">GPA: 3.78 / 4.00</span>
+            </div>
+          </div>
+
+          <div class="edu-card fade-in">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div class="edu-card__content">
+              <h3 class="edu-card__degree">Be a Top Search Quality Engineer</h3>
+              <p class="edu-card__institution">Alterra Academy — Independent Study</p>
+              <p class="edu-card__meta">Online &middot; <time datetime="2022-08">Aug 2022</time> &ndash; <time datetime="2022-12">Dec 2022</time></p>
+              <div class="edu-card__badges">
+                <span class="edu-card__badge">Score: 90/100</span>
+                <span class="edu-card__badge edu-card__badge--outline">Capstone Project</span>
+              </div>
+              <a
+                href="https://drive.google.com/drive/folders/1ouZ_5nXzb30MBM3pxQ0uihZv5LEcaPMD"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="edu-card__link"
+                aria-label="View Alterra Academy certificate on Google Drive (opens in new tab)"
+              >
+                View Certificate
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         ACHIEVEMENTS & ORGANIZATIONS
+    ============================= -->
+    <section class="section section--alt" id="organizations" aria-labelledby="org-heading">
+      <div class="section__container">
+        <div class="section__header fade-in">
+          <span class="section__label">Beyond Work</span>
+          <h2 class="section__title" id="org-heading">Achievements &amp; Organizations</h2>
+        </div>
+
+        <!-- Achievements -->
+        <h3 class="subsection-title fade-in">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Awards
+        </h3>
+        <div class="achievements__grid" role="list" aria-label="Awards and achievements">
+
+          <div class="achievement-card fade-in" role="listitem">
+            <time class="achievement-card__year" datetime="2024">2024</time>
+            <p class="achievement-card__title">Best Hard Skill (Junior)</p>
+            <p class="achievement-card__org">Synapsis</p>
+          </div>
+
+          <div class="achievement-card fade-in" role="listitem">
+            <time class="achievement-card__year" datetime="2025">2025</time>
+            <p class="achievement-card__title">Best Team in Operation Division</p>
+            <p class="achievement-card__org">Synapsis</p>
+          </div>
+
+          <div class="achievement-card achievement-card--nominee fade-in" role="listitem">
+            <time class="achievement-card__year" datetime="2025">2025</time>
+            <p class="achievement-card__title">Best Synergy (Junior)</p>
+            <p class="achievement-card__org">Synapsis &mdash; Nominee</p>
+          </div>
+
+        </div>
+
+        <!-- Organizations -->
+        <h3 class="subsection-title fade-in" style="margin-top:3rem;">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Organizational Experience
+        </h3>
+
+        <div class="timeline" role="list" aria-label="Organizational experience timeline">
+
+          <article class="timeline__item fade-in" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h4 class="timeline__role">Library Chief</h4>
+                  <p class="timeline__company">GKI Harapan Indah Library &mdash; Bekasi City, West Java</p>
+                </div>
+                <time class="timeline__date" datetime="2026-04">Apr 2026 &ndash; Present</time>
+              </div>
+              <ul class="timeline__list" role="list">
+                <li>Spearheaded quarterly coordination meetings to evaluate organizational progress and align strategic goals.</li>
+                <li>Directed and monitored cross-functional teams, including IT and Promotions, ensuring optimal productivity.</li>
+                <li>Formulated and delivered comprehensive performance and operational reports to the advisory board.</li>
+                <li>Managed operational scheduling of library personnel to ensure seamless daily services.</li>
+                <li>Supervised monthly financial reports to maintain strict budget transparency and accountability.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item fade-in" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h4 class="timeline__role">Library Staff</h4>
+                  <p class="timeline__company">GKI Harapan Indah Library &mdash; Bekasi City, West Java</p>
+                </div>
+                <time class="timeline__date" datetime="2024-08">Aug 2024 &ndash; Mar 2026</time>
+              </div>
+              <ul class="timeline__list" role="list">
+                <li>Maintained and modified the book borrowing system for the church's library.</li>
+                <li>Served members and visitors for book borrowing and returning.</li>
+                <li>Registered accounts for new members.</li>
+                <li>Managed email, social media accounts, and data backup of the library.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item fade-in" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h4 class="timeline__role">Member</h4>
+                  <p class="timeline__company">Student Representative Council (KEMAKOM FPMIPA UPI) &mdash; Bandung</p>
+                </div>
+                <time class="timeline__date" datetime="2020-01">Jan 2020 &ndash; Jan 2021</time>
+              </div>
+              <ul class="timeline__list" role="list">
+                <li>Managed, reviewed, and developed legislative regulations, bills, and standard operating procedures.</li>
+                <li>Provided information related to legislative activity through annual seminars.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         CONTACT
+    ============================= -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="section__container">
+        <div class="section__header fade-in">
+          <span class="section__label">Get In Touch</span>
+          <h2 class="section__title" id="contact-heading">Let's Connect</h2>
+        </div>
+
+        <p class="contact__intro fade-in">
+          I'm always open to new opportunities, collaborations, or just a friendly conversation about QA and software quality. Feel free to reach out through any of the channels below.
+        </p>
+
+        <div class="contact__grid" role="list" aria-label="Contact links">
+
+          <a href="mailto:samuelnelson_1901584@upi.edu" class="contact-card fade-in" aria-label="Send email to Samuel Nelson" role="listitem">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            </div>
+            <p class="contact-card__label">Email</p>
+            <p class="contact-card__value">samuelnelson_1901584@upi.edu</p>
+          </a>
+
+          <a href="https://www.linkedin.com/in/samuel-nelson-2a0b65245/" target="_blank" rel="noopener noreferrer" class="contact-card fade-in" aria-label="Samuel Nelson on LinkedIn (opens in new tab)" role="listitem">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <p class="contact-card__label">LinkedIn</p>
+            <p class="contact-card__value">samuel-nelson-2a0b65245</p>
+          </a>
+
+          <a href="https://github.com/samuelnelson1584" target="_blank" rel="noopener noreferrer" class="contact-card fade-in" aria-label="Samuel Nelson on GitHub (primary account, opens in new tab)" role="listitem">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <p class="contact-card__label">GitHub (Primary)</p>
+            <p class="contact-card__value">samuelnelson1584</p>
+          </a>
+
+          <a href="https://github.com/samuelnelson1000" target="_blank" rel="noopener noreferrer" class="contact-card fade-in" aria-label="Samuel Nelson on GitHub (secondary account, opens in new tab)" role="listitem">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <p class="contact-card__label">GitHub (Alt)</p>
+            <p class="contact-card__value">samuelnelson1000</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <p class="footer__copy">&copy; 2026 Samuel Nelson. Built with care &amp; deployed on GitHub Pages.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="mailto:samuelnelson_1901584@upi.edu" class="footer__link">Email</a>
+        <a href="https://www.linkedin.com/in/samuel-nelson-2a0b65245/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://github.com/samuelnelson1584" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
